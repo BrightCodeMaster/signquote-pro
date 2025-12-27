@@ -1,5 +1,5 @@
 // constants/index.ts
-// 全局定价 & 字体配置（供 App.tsx 使用）
+// 全局定价 & 字体配置
 
 export const PRICING = {
   CHANNEL_LETTERS: {
@@ -7,32 +7,51 @@ export const PRICING = {
     perSqft: 25,
     laborPerHour: 80,
   },
-  LIGHTBOX_SIGN: {
+  LIGHTBOX: {
     base: 95,
-    perSqft: 20,
+    perSqft: 22,
     laborPerHour: 75,
   },
-  PYLON_SIGN: {
+  PYLON: {
     base: 150,
     perSqft: 30,
     laborPerHour: 90,
   },
-  BLADE_SIGN: {
+  BLADE: {
     base: 110,
-    perSqft: 22,
-    laborPerHour: 80,
+    perSqft: 25,
+    laborPerHour: 85,
   },
-  FLAT_PANEL_SIGN: {
+  FLAT_PANEL: {
     base: 80,
     perSqft: 18,
     laborPerHour: 70,
   },
+  WINDOW_VINYL: {
+    base: 15,
+    perSqft: 10,
+    laborPerHour: 60,
+  },
 };
 
-export const FONT_LIBRARY = {
-  classic: ['Arial', 'Helvetica', 'Times New Roman'],
-  modern: ['Montserrat', 'Poppins', 'Inter'],
-  signage: ['Roboto Condensed', 'Oswald', 'DIN'],
+export const FONT_LIBRARY: Record<string, string[]> = {
+  "General Commercial": [
+    "Arial",
+    "Helvetica",
+    "Roboto",
+    "Montserrat",
+    "Poppins",
+  ],
+  "Luxury / High-end": [
+    "Playfair Display",
+    "Cinzel",
+    "Didot",
+  ],
+  "Bold / Visibility": [
+    "Oswald",
+    "Bebas Neue",
+    "DIN",
+  ],
 };
 
 export function getAllFonts(): string[] {
