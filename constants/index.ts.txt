@@ -1,0 +1,24 @@
+// constants/index.ts
+// 全局常量配置（给 App.tsx / pricing 使用）
+
+export const SIGN_TYPES = [
+  "Channel Letters",
+  "Lightbox Sign",
+  "Pylon Sign",
+  "Blade Sign",
+  "Flat Panel Sign",
+];
+
+export const BASE_PRICES = {
+  "Channel Letters": 120,
+  "Lightbox Sign": 95,
+  "Pylon Sign": 150,
+  "Blade Sign": 110,
+  "Flat Panel Sign": 80,
+};
+
+export const PRICE_PER_SQFT = 25;
+
+export const LABOR_RATE_PER_HOUR = 80;
+
+export const DEFAULT_MARKUP = 1.2;
